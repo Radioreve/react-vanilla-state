@@ -65,9 +65,7 @@ export default class StateMadness extends Component<Props, State> {
     return (
       <>
         <button onClick={() => this.increment()}>{this.props.name}</button>
-        <b style={{ display: "inline", margin: "0 0 0 20px" }}>
-          Current count {this.state.count}
-        </b>
+        <p>Current count {this.state.count}</p>
       </>
     );
   }

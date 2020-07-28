@@ -6,8 +6,16 @@
 
 import React, { Component } from "react";
 
-export default class SetStateMadness extends Component {
+export default class ClassComponentTimeout extends Component {
+  state = {
+    i: 0,
+  };
   render() {
-    return <p>Hello</p>;
+    return (
+      <>
+        <button>Click me multiple times</button>
+        <p>I have been clicked : {this.state.i} times</p>
+      </>
+    );
   }
 }
